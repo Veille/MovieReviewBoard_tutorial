@@ -110,4 +110,7 @@ hs_err_pid*
 
 target/
 
+# secrets!
+src/main/resources/application.properties
+
 # End of https://www.gitignore.io/api/kotlin,intellij

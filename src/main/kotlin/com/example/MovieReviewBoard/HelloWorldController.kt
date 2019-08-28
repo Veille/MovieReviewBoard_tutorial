@@ -16,7 +16,7 @@ class HelloWorldController {
 
     @GetMapping("/helloworld")
     fun greet(): String {
-        return "Hello World!"
+        return "helloworld!"
     }
 
     @Bean
