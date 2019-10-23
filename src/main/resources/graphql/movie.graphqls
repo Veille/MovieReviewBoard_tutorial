@@ -1,0 +1,19 @@
+# MovieReviewBoard/backend/src/main/resources
+
+type Movie {
+    id: ID!
+    title: String!
+    director: Director!
+    rating: Int
+    releaseDate: String!
+}
+
+type Query {
+    findAllMovies: [Movie]!
+    countMovies: Int!
+}
+
+type Mutation {
+    updateMovieRating(movieId: Int, vote: Int!): Int!
+    newMovie(title: String!, directorId: ID!, releaseDate: String!, rating: Int): Movie!
+}
